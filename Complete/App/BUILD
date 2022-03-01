@@ -7,9 +7,6 @@ swift_library(
         "*.swift"
     ]),
     data = [
-    	"//Assets:Assets",
-    	"Base.lproj/Main.storyboard",
-    	"Base.lproj/LaunchScreen.storyboard",
     ],
     deps = [
         "//Lib/Logging:TLLogging"
@@ -21,7 +18,7 @@ ios_application(
     bundle_id = "com.thanhvu.test",
     infoplists = ["Info.plist"],
     families = ["iphone"],
-    minimum_os_version = "12.0",
+    minimum_os_version = "15.0",
     deps = [
         ":App_Classes",
     ]
